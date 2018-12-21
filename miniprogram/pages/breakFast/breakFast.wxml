@@ -1,0 +1,14 @@
+<!--pages/breakfast/breakfast.wxml-->
+<view class="guide">
+    <view wx:for="{{queryResult}}" class="guide">
+      <image style='width:100px;height:100px;float:left' src="{{item.imgpath}}" mode="aspectFit"></image>
+      <view class="guide" style='width:200px;height:100px;float:right' >
+      <text class="headline">{{item.foodname}}</text>
+      <text class="p">{{item.description}}</text>
+      <text class="p">{{item.foodprice}}</text>
+      </view>
+      <text>
+      -<input></input>+
+      </text>
+    </view>
+</view>
